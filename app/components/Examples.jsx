@@ -4,7 +4,10 @@ var React = require('react');
 // you can use arrow functions. Available in React > 0.14?
 var Examples = (props) => {
     return (
-      <h3>Examples Com</h3>
+      <div>
+        <h3>Examples Com</h3>
+        <p>Welcome to the examples page</p>
+      </div>
     )
 };
 
