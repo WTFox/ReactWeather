@@ -9,7 +9,7 @@ var WeatherForm = React.createClass({
       this.props.onSearch(location);
     }
   },
-  render: function() {
+    render: function() {
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>

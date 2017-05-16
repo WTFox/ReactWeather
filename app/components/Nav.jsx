@@ -2,7 +2,7 @@ var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
 // for components that do no require maintaining state,
-// you can use arrow functions. Available in React > 0.14?
+// you can use arrow functions. Available in React > 14?
 var Nav = (props) => {
     return (
       <div>

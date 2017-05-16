@@ -1,29 +1,30 @@
 var names = ['Anthony', 'Paola', 'Loki', 'Zach', 'Jess'];
 
-// names.forEach(function (name) {
-//   console.log('forEach', name);
-// });
-//
-// names.forEach((name) => {
-//   console.log('arrowFunction', name);
-// });
-//
-// names.forEach((name) => console.log(name));
+names.forEach(function (name) {
+  console.log('forEach', name);
+});
 
-// var returnMe = (name) => `${name}!!`;
-// console.log(returnMe('Anthony'));
+names.forEach((name) => {
+  console.log('arrowFunction', name);
+});
 
-// var person = {
-//   name: 'Anthony',
-//   greet: function () {
-//     names.forEach((name) => {
-//       console.log(this.name + ' says hi to ' + name)
-//     })
-//   }
-// }
-//
-// person.greet();
+names.forEach((name) => console.log(name));
 
+var returnMe = (name) => `${name}!!`;
+console.log(returnMe('Anthony'));
+
+var person = {
+  name: 'Anthony',
+  greet: function () {
+    names.forEach((name) => {
+      console.log(this.name + ' says hi to ' + name)
+    })
+  }
+}
+
+person.greet();
+
+// add function
 function add (a, b) {
   return a + b;
 }
@@ -31,12 +32,12 @@ function add (a, b) {
 console.log(add(1, 3));
 console.log(add(9, 0));
 
-// addStatement
+// arrow add expression
 var addExpression = (a, b) => a + b;
 console.log('addExpression', addExpression(1, 3));
 console.log('addExpression', addExpression(9, 0));
 
-// addExpression
+// arrow add statement
 var addStatement = (a, b) => {
   return a + b;
 }
